@@ -1,0 +1,18 @@
+
+*How to solve(General approach):
+
+The values at the top of each cycle are 3,6,12,24,… so you can easily find these values by multiply 3 to 2 multiple times.
+And the time at top is 1,4,10,22,… you can instantly see that time t is equal top value at each cycle minus 2.
+1 = 3-2
+4 = 6-2
+10 = 12-2
+…so on
+
+Here the biggest input is 10^12, so we have to create a list big enough to cover this number, 45 is large enough.
+Then you can go through all elements in the list, if t is exactly the value at that element, we simply print out 
+dic[i]+2 . Otherwise, we seek for the first element bigger than t, because we know that,
+t is inside the cycle that  the top is the value of that element. For example:
+t = 7, the list is 1,4,10,22
+We loop to 10, because 10 is the first element bigger than 4, 
+so we stop right there. With top = 4, the value at the top is 4+2 = 6. 
+The value we’re looking for is: 6-(t-top), you got the idea.
