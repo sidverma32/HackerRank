@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        long t = in.nextLong();
+        long initVal=3L;
+       while(true)
+           {
+           if(initVal>=t)
+               {
+               System.out.println(initVal-t+1);
+               break;
+           }
+           else
+               {
+               t=t-initVal;
+               initVal=initVal*2;
+           }
+       }
+        
+    }
+}
