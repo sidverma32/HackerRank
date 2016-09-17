@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+
+int main()
+{
+       double x,y;
+  double a,b;
+  scanf("%lf%lf\n",&x,&y);
+   scanf("%lf%lf",&a,&b);
+
+ double k;
+   double n;
+  double a1=-b;
+  double b1=a;
+  if(a==b){
+    k=(x+y)/(a*2);
+ printf("%lf\n",k);
+
+
+  n=(x-(k*a))/a1;
+  printf("%lf",n);
+  }
+  else{
+    k=((a1*(-y))-(b1*(-x)))/((a*b1)-(b*a1));
+    n=(((-x)*b)-((-y)*a))/((a*b1)-(b*a1));
+    printf("%lf\n",k);
+    printf("%lf",n);
+  }
+
+
+
+   return 0;
+
+}
