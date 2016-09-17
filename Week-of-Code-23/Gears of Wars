@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+   long int t,n;
+    long int i;
+    scanf("%lu",&t);
+    for(i=0;i<t;i++)
+        {
+        scanf("%lu",&n);
+        if(n%2==0)
+            {
+            printf("Yes\n");
+            
+        }
+        else
+            printf("No\n");
+    }
+    
+    return 0;
+}
